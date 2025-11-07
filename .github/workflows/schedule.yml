@@ -26,8 +26,7 @@ jobs:
       
       - name: Run OpenAI Workflow
         run: |
-          python scripts/run_workflow.py
-        env:
+python ./scripts/run_workflow.py        env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           WORKFLOW_ID: ${{ secrets.WORKFLOW_ID }}
       
